@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Build-a-Blog</title>
+        <style type="text/css">
+            .error {
+                color: red;
+            }
+            h1 {
+                text-align: center;
+                font-size: 2em;
+                font-family: Georgia, serif;
+                font-weight: bold;
+            }
+            h2 {
+                font-size: : 1.5em;
+                font-family: Georgia, serif;
+                padding: 25px 100px;
+            }
+            .post {
+                font-family: Verdana, sans-serif;
+                padding: 25px 100px;
+            }
+            textarea {
+                height: 400px;
+                width: 600px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>My Blog</h1>
+
+        {% block content %}
+        {% endblock %}
+
+    </body>
+</html>
