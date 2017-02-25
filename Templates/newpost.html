@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
+<p class="error">{{ error if error else ""}}</p>
 <form action="/newpost" method="post">
     <label for="subject">Blog Post Title</label>
     <br />
@@ -9,6 +10,6 @@
     <br />
     <textarea name="content">{{ content }}</textarea>
     <br />
-    <input type="submit" />
+    <input type="submit" value="Submit"/>
 </form>
 {% endblock %}

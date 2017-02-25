@@ -3,13 +3,13 @@
 {% block content %}
 
 <p class="error">{{ error if error else ""}}</p>
-<form action="/newpost" method="get">
+<form action="/newpost" method="post">
     <input type="submit" value="Add a new post" />
 </form>
 
 {% for post in posts %}
-<h2>{{ post.title }}</h2>
-<p class="post">{{ post.body }}</p>
+<h2>{{ post.subject }}</h2>
+<p class="post">{{ post.content }}</p>
 {% endfor %}
 
 {% endblock %}
